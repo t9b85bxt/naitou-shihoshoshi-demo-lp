@@ -936,8 +936,20 @@ section {
   .site-header.nav-open .main-nav a { padding: 12px 0; border-bottom: 1px solid var(--c-cream-line); }
 
   .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-photo { min-height: 46vh; }
-  .hero-content { padding: 10vw 6vw; }
+  .hero-photo { min-height: 30vh; max-height: 300px; }
+  .hero-content {
+    position: relative;
+    margin-top: -36px;
+    padding: 30px 6vw 9vw;
+    background: var(--c-cream);
+    border-radius: 22px 22px 0 0;
+    box-shadow: 0 -18px 28px -22px rgba(28, 59, 44, 0.35);
+  }
+  .hero-title { font-size: clamp(1.9rem, 7.5vw, 2.6rem); }
+  .hero-lead { margin-top: 16px; }
+  .hero-content > .btn { margin-top: 22px; }
+  .hero-tel-block { margin-top: 22px; }
+  .hero-area-note { margin-top: 18px; padding-top: 16px; }
 
   .services-grid { grid-template-columns: 1fr; }
   .faq { grid-template-columns: 1fr; }
